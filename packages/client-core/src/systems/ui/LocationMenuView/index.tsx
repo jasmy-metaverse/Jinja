@@ -35,7 +35,7 @@ import { XRAction, XRState } from '@etherealengine/engine/src/xr/XRState'
 import { createXRUI } from '@etherealengine/engine/src/xrui/functions/createXRUI'
 import { WidgetAppService } from '@etherealengine/engine/src/xrui/WidgetAppService'
 import { WidgetName } from '@etherealengine/engine/src/xrui/Widgets'
-import { dispatchAction, getMutableState } from '@etherealengine/hyperflux'
+import { defineState, dispatchAction, getMutableState } from '@etherealengine/hyperflux'
 import Icon from '@etherealengine/ui/src/primitives/mui/Icon'
 
 import { AuthState } from '../../../user/services/AuthService'
@@ -47,6 +47,13 @@ import styleString from './index.scss?inline'
 export function createLocationMenuView() {
   return createXRUI(LocationMenuView, createLocationMenuState())
 }
+
+export const throwButton = defineState({
+  name: 'buttonThrow',
+  initial: {
+    disabled: false
+  }
+})
 
 function createLocationMenuState() {
   return createState({})

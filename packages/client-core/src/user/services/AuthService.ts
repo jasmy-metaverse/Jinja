@@ -553,6 +553,14 @@ export const AuthService = {
     dispatchAction(AuthAction.actionProcessing({ processing: true }))
     try {
       await API.instance.client.logout()
+      localStorage.removeItem('keycloakUser')
+      localStorage.removeItem('googleUser')
+      localStorage.removeItem('usercode')
+      localStorage.removeItem('ComfirmSelected')
+      localStorage.removeItem('pdl_access_token')
+      localStorage.removeItem('pdl_username_updated')
+      localStorage.removeItem('avatarname')
+      localStorage.removeItem('selectavatar')
       dispatchAction(AuthAction.didLogoutAction({}))
     } catch (_) {
       dispatchAction(AuthAction.didLogoutAction({}))
@@ -734,7 +742,7 @@ export const AuthService = {
   },
 
   async addConnectionByOauth(
-    oauth: 'facebook' | 'google' | 'github' | 'linkedin' | 'twitter' | 'discord',
+    oauth: 'facebook' | 'google' | 'github' | 'linkedin' | 'twitter' | 'discord' | 'keycloak',
     userId: string
   ) {
     window.open(`https://${config.client.serverHost}/auth/oauth/${oauth}?userId=${userId}`, '_blank')

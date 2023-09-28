@@ -35,6 +35,7 @@ import $discord from './oauth/discord'
 import $facebook from './oauth/facebook'
 import $github from './oauth/github'
 import $google from './oauth/google'
+import $keycloak from './oauth/keycloak'
 import $linkedin from './oauth/linkedin'
 import $twitter from './oauth/twitter'
 
@@ -50,6 +51,7 @@ const AuthRoutes = () => {
         <Route path="oauth/twitter" element={<$twitter />} />
         <Route path="confirm" element={<$confirm />} />
         <Route path="magiclink" element={<$magiclink />} />
+        <Route path="oauth/keycloak" element={<$keycloak />} />
       </Routes>
     </Suspense>
   )

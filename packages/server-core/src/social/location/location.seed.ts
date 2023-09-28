@@ -33,8 +33,8 @@ export const locationSeed = {
   templates: [
     {
       id: '98cbcc30-fd2d-11ea-bc7c-cd4cac9a8d60',
-      name: 'Default',
-      slugifiedName: 'default',
+      name: 'Dancing',
+      slugifiedName: 'dancing',
       maxUsersPerInstance: 30,
       sceneId: 'default-project/default',
       location_settings: locationSettingsSeed.templates.find(
@@ -61,6 +61,28 @@ export const locationSeed = {
       sceneId: 'default-project/apartment',
       location_settings: locationSettingsSeed.templates.find(
         (template) => template.locationId === '98cbcc30-fd2d-11ea-bc7c-cd4cac9a8d63'
+      ),
+      isLobby: false
+    } as Location,
+    {
+      id: '98cbcc30-fd2d-11ea-bc7c-cd4cac9a8d64',
+      name: 'Football',
+      slugifiedName: 'football',
+      maxUsersPerInstance: 30,
+      sceneId: 'default-project/football',
+      location_settings: locationSettingsSeed.templates.find(
+        (template) => template.locationId === '98cbcc30-fd2d-11ea-bc7c-cd4cac9a8d64'
+      ),
+      isLobby: false
+    } as Location,
+    {
+      id: '98cbcc30-fd2d-11ea-bc7c-cd4cac9a8d65',
+      name: 'Default',
+      slugifiedName: 'default',
+      maxUsersPerInstance: 30,
+      sceneId: 'default-project/shrine',
+      location_settings: locationSettingsSeed.templates.find(
+        (template) => template.locationId === '98cbcc30-fd2d-11ea-bc7c-cd4cac9a8d65'
       ),
       isLobby: false
     } as Location

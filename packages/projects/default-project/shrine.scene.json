@@ -1,0 +1,1173 @@
+{
+  "version": 0,
+  "entities": {
+    "d32b1c4e-d08e-4fb0-9107-4c88a281ee71": {
+      "components": [
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "envmapbake",
+          "props": {
+            "bakePosition": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "bakePositionOffset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "bakeScale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            },
+            "bakeType": "Baked",
+            "resolution": 2048,
+            "refreshMode": "OnAwake",
+            "envMapOrigin": "__$project$__/default-project/shrine.envmap.ktx2",
+            "boxProjection": true
+          }
+        }
+      ],
+      "name": "empty_scene"
+    },
+    "bb362197-f14d-4da7-9c3c-1ed834386423": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 3.3923594198776454,
+              "y": 3.255742964073849,
+              "z": -37.88154876015946
+            },
+            "rotation": {
+              "x": -0.08793872498359402,
+              "y": 0.13976022742944055,
+              "z": 0.012462392354979533,
+              "w": 0.9861939709073064
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "scene-preview-camera",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 0,
+      "name": "scene preview camera"
+    },
+    "e7d6bfb1-6390-4a8b-b744-da83b059c2d3": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "skybox",
+          "props": {
+            "backgroundColor": 0,
+            "equirectangularPath": "",
+            "cubemapPath": "__$project$__/default-project/assets/skyboxsun25deg/",
+            "backgroundType": 1,
+            "skyboxProps": {
+              "turbidity": 10,
+              "rayleigh": 1,
+              "luminance": 1,
+              "mieCoefficient": 0.004999999999999893,
+              "mieDirectionalG": 0.99,
+              "inclination": 0.10471975511965978,
+              "azimuth": 0.16666666666666666
+            }
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 1,
+      "name": "skybox"
+    },
+    "3e8a430e-9dcf-440e-990c-44ecb8051762": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": -5.053215498074303e-16,
+              "y": -1,
+              "z": -6.12323399573677e-17,
+              "w": -6.123234262925839e-17
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "spawn-point",
+          "props": {
+            "permissionedUsers": []
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 2,
+      "name": "spawn point"
+    },
+    "f77dc4c6-c9a6-433d-8102-4a9a8e1c0ce9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "hemisphere-light",
+          "props": {
+            "skyColor": 16777215,
+            "groundColor": 16777215,
+            "intensity": 1
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 3,
+      "name": "hemisphere light"
+    },
+    "cb045cfd-8daf-4a2b-b764-35625be54a11": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0,
+              "y": 10,
+              "z": -51
+            },
+            "rotation": {
+              "x": 0.21822543928904342,
+              "y": -0.7147492895186113,
+              "z": 0.5385141409578595,
+              "w": 0.38924751864098395
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "directional-light",
+          "props": {
+            "color": 16777215,
+            "intensity": 1,
+            "cameraFar": 2000,
+            "castShadow": true,
+            "shadowMapResolution": 512,
+            "shadowBias": -0.00001,
+            "shadowRadius": 1,
+            "useInCSM": true
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 4,
+      "name": "directional light"
+    },
+    "bd4c1f8d-a99a-4ba8-93c3-408fd74c304b": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -1.5,
+              "y": 0.0840000014901161,
+              "z": -55.73055989129465
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/default-project/assets/ground_plane_collider_v3.glb",
+            "generateBVH": true,
+            "avoidCameraOcclusion": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "None",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "",
+            "envMapIntensity": 1
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        },
+        {
+          "name": "collider",
+          "props": {
+            "bodyType": 1,
+            "shapeType": 1,
+            "isTrigger": false,
+            "removeMesh": false,
+            "collisionLayer": 1,
+            "collisionMask": 7,
+            "restitution": 0.5
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 5,
+      "name": "ground_collider"
+    },
+    "f87d9c58-4658-4376-9176-0446c7428753": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -2.5,
+              "y": -2,
+              "z": -36.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/default-project/assets/collider_shrine_v6.glb",
+            "generateBVH": true,
+            "avoidCameraOcclusion": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "None",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "",
+            "envMapIntensity": 1
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        },
+        {
+          "name": "collider",
+          "props": {
+            "bodyType": 1,
+            "shapeType": 1,
+            "isTrigger": false,
+            "removeMesh": false,
+            "collisionLayer": 1,
+            "collisionMask": 7,
+            "restitution": 0.5
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 6,
+      "name": "outer_collider"
+    },
+    "e4e9ef00-3d66-4c96-be5e-2f89a0553ccf": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -0.49999999999999967,
+              "y": 2,
+              "z": -63.198637621410654
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0.7071067811865475,
+              "z": 0,
+              "w": 0.7071067811865476
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/default-project/assets/collider_shrine_inner_v8.glb",
+            "generateBVH": false,
+            "avoidCameraOcclusion": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "None",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "",
+            "envMapIntensity": 1
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        },
+        {
+          "name": "collider",
+          "props": {
+            "bodyType": 1,
+            "shapeType": 1,
+            "isTrigger": false,
+            "removeMesh": false,
+            "collisionLayer": 1,
+            "collisionMask": 7,
+            "restitution": 0.5
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 7,
+      "name": "inner_collider"
+    },
+    "dd478003-49ef-4b78-94aa-1b517fc38be9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -1.5,
+              "y": 0.16000000000000014,
+              "z": -36
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/default-project/assets/Japanese_Shrine_floor_4.glb",
+            "generateBVH": true,
+            "avoidCameraOcclusion": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "None",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "",
+            "envMapIntensity": 1
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 8,
+      "name": "shrine_floor"
+    },
+    "c7013e33-e244-4d39-9c44-62e3f327a1dc": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 23,
+              "y": 2.5,
+              "z": -53
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 0.2463768115942029,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "image",
+          "props": {
+            "source": "__$project$__/default-project/assets/dance.png",
+            "alphaMode": "Opaque",
+            "alphaCutoff": 0.5,
+            "projection": "Flat",
+            "side": 2
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 9,
+      "name": "New Image"
+    },
+    "7b7328f9-449b-4494-a923-86d813860346": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -27.5,
+              "y": 2.5,
+              "z": -53
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 0.23890784982935154,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "image",
+          "props": {
+            "source": "__$project$__/default-project/assets/Football.png",
+            "alphaMode": "Opaque",
+            "alphaCutoff": 0.5,
+            "projection": "Flat",
+            "side": 2
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 10,
+      "name": "New Image 2"
+    },
+    "4affeb7b-7811-4c07-a3a0-724de777abb9": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -2.4,
+              "y": 1.1,
+              "z": -53
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1.9,
+              "z": 1.6
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "image",
+          "props": {
+            "source": "__$project$__/default-project/assets/matsuki-rina-san_miko.png",
+            "alphaMode": "Blend",
+            "alphaCutoff": 0.5,
+            "projection": "Flat",
+            "side": 2
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 11,
+      "name": "matsuki-rina-san_miko"
+    },
+    "55998c27-dcf3-454c-be41-1eb413abcf71": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -1.4437711911672555,
+              "y": 0.2287204572809931,
+              "z": -54.33343394492729
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 0.006999999999999895,
+              "y": 0.006999999999999895,
+              "z": 0.006999999999999895
+            }
+          }
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/default-project/assets/Jinja.glb",
+            "generateBVH": true,
+            "avoidCameraOcclusion": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "None",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "",
+            "envMapIntensity": 1
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 12,
+      "name": "jinja"
+    },
+    "29c19111-63a0-4734-a133-f4b4f6543c2c": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 0.6976292530974808,
+              "y": 0.18400000298023222,
+              "z": -42.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 0.3600000000000001,
+              "y": 0.3400000000000001,
+              "z": 0.3600000000000001
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "gltf-model",
+          "props": {
+            "src": "__$project$__/default-project/assets/gate.glb",
+            "generateBVH": true,
+            "avoidCameraOcclusion": false
+          }
+        },
+        {
+          "name": "envmap",
+          "props": {
+            "type": "None",
+            "envMapTextureType": "Equirectangular",
+            "envMapSourceColor": 4095,
+            "envMapSourceURL": "",
+            "envMapIntensity": 1
+          }
+        },
+        {
+          "name": "loop-animation",
+          "props": {
+            "activeClipIndex": -1,
+            "hasAvatarAnimations": false
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 13,
+      "name": "gate"
+    },
+    "6769c118-4931-4e23-b5e9-4ae0e4be16b1": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 1.2001702483894126,
+              "y": 1.25,
+              "z": -52.69219267946771
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 2.16,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "image",
+          "props": {
+            "source": "__$project$__/default-project/assets/takahashi_yoshiki-san_kannushi.png",
+            "alphaMode": "Blend",
+            "alphaCutoff": 0.5,
+            "projection": "Flat",
+            "side": 2
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 14,
+      "name": "takahashi_yoshiki-san_kannushi"
+    },
+    "bd4e4907-1418-4464-9e6e-362cac33969e": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -2.3153894637340073,
+              "y": 1.5935064467898366,
+              "z": -8.311839859862774
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1.5,
+              "y": 2,
+              "z": 2
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "image",
+          "props": {
+            "source": "__$project$__/default-project/assets/explanation_jinja.png",
+            "alphaMode": "Opaque",
+            "alphaCutoff": 0.5,
+            "projection": "Flat",
+            "side": 2
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 15,
+      "name": "welcome_manual"
+    },
+    "c207ecd9-0666-435d-b1eb-b05c40ba5a21": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 2.3716491376679643,
+              "y": 1.5935064467898366,
+              "z": -8.311839859862774
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 2,
+              "y": 2,
+              "z": 2
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "image",
+          "props": {
+            "source": "__$project$__/default-project/assets/how_to_jinja2.png",
+            "alphaMode": "Opaque",
+            "alphaCutoff": 0.5,
+            "projection": "Flat",
+            "side": 2
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 16,
+      "name": "how_to_jinja"
+    },
+    "49aa9781-cbf1-43c5-b894-bd78aed8eaea": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -2.84694954552239,
+              "y": 2.6914750714669027,
+              "z": -8.3
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 0.6571820363387042,
+              "z": 1
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "image",
+          "props": {
+            "source": "__$project$__/default-project/assets/wintos_flying_2nd.png",
+            "alphaMode": "Blend",
+            "alphaCutoff": 0.5,
+            "projection": "Flat",
+            "side": 2
+          }
+        }
+      ],
+      "parent": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71",
+      "index": 17,
+      "name": "New Image 3"
+    },
+    "4777e047-1b47-46de-b6c5-0562fee5ac43": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": 24.5,
+              "y": 1.3399999999999999,
+              "z": -17.5
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "collider",
+          "props": {
+            "bodyType": 1,
+            "shapeType": 1,
+            "isTrigger": true,
+            "removeMesh": true,
+            "collisionLayer": 8,
+            "collisionMask": 2,
+            "restitution": 0.5,
+            "onEnter": "teleport",
+            "onExit": null,
+            "target": ""
+          }
+        },
+        {
+          "name": "portal",
+          "props": {
+            "location": "dancing",
+            "linkedPortalId": "",
+            "redirect": true,
+            "effectType": "None",
+            "previewType": "Spherical",
+            "previewImageURL": "",
+            "spawnPosition": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "spawnRotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          }
+        }
+      ],
+      "parent": "dd478003-49ef-4b78-94aa-1b517fc38be9",
+      "index": 0,
+      "name": "New Portal"
+    },
+    "a1b1dfce-7ff3-4c1e-8a21-a155b5461911": {
+      "components": [
+        {
+          "name": "transform",
+          "props": {
+            "position": {
+              "x": -26,
+              "y": 1.3399999999999999,
+              "z": -17
+            },
+            "rotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 0.5,
+              "y": 0.5,
+              "z": 0.5
+            }
+          }
+        },
+        {
+          "name": "visible",
+          "props": {}
+        },
+        {
+          "name": "shadow",
+          "props": {
+            "cast": true,
+            "receive": true
+          }
+        },
+        {
+          "name": "collider",
+          "props": {
+            "bodyType": 1,
+            "shapeType": 1,
+            "isTrigger": true,
+            "removeMesh": true,
+            "collisionLayer": 8,
+            "collisionMask": 2,
+            "restitution": 0.5,
+            "onEnter": "teleport",
+            "onExit": null,
+            "target": ""
+          }
+        },
+        {
+          "name": "portal",
+          "props": {
+            "location": "football",
+            "linkedPortalId": "",
+            "redirect": true,
+            "effectType": "None",
+            "previewType": "Spherical",
+            "previewImageURL": "",
+            "spawnPosition": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "spawnRotation": {
+              "x": 0,
+              "y": 0,
+              "z": 0,
+              "w": 1
+            }
+          }
+        }
+      ],
+      "parent": "dd478003-49ef-4b78-94aa-1b517fc38be9",
+      "index": 1,
+      "name": "New Portal 2"
+    }
+  },
+  "root": "d32b1c4e-d08e-4fb0-9107-4c88a281ee71"
+}

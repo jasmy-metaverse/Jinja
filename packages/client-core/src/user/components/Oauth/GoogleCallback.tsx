@@ -47,6 +47,7 @@ const GoogleCallbackComponent = (props): JSX.Element => {
     const type = search.get('type') as string
     const path = search.get('path') as string
     const instanceId = search.get('instanceId') as string
+    localStorage.setItem('googleUser', 'true')
 
     if (!error) {
       if (type === 'connection') {
@@ -63,6 +64,7 @@ const GoogleCallbackComponent = (props): JSX.Element => {
   }, [])
 
   function redirectToRoot() {
+    localStorage.removeItem('googleUser')
     window.location.href = '/'
   }
 

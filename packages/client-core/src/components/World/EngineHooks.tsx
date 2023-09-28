@@ -85,13 +85,13 @@ export const useLoadEngine = () => {
 
 const fetchMissingAvatar = async (user, avatarSpawnPose) => {
   const avatar = await AvatarService.getAvatar(user.avatar.id.value)
-  if (avatar && avatar.modelResource?.url)
+  if (avatar && avatar.modelResource?.url) {
     spawnLocalAvatarInWorld({
       avatarSpawnPose,
       avatarID: avatar.id,
       name: user.name.value
     })
-  else
+  } else
     NotificationService.dispatchNotify(
       'Your avatar is missing its model. Please change your avatar from the user menu.',
       { variant: 'error' }
@@ -129,14 +129,13 @@ export const useLocationSpawnAvatar = (spectate = false) => {
     const avatarSpawnPose = spawnPoint
       ? getSpawnPoint(spawnPoint, Engine.instance.userId)
       : getRandomSpawnPoint(Engine.instance.userId)
-
-    if (avatarDetails.modelResource?.url)
+    if (avatarDetails.modelResource?.url) {
       spawnLocalAvatarInWorld({
         avatarSpawnPose,
         avatarID: user.avatar.id.value,
         name: user.name.value
       })
-    else fetchMissingAvatar(user, avatarSpawnPose)
+    } else fetchMissingAvatar(user, avatarSpawnPose)
   }, [sceneLoaded, authState.user, authState.user?.avatar, spectateParam])
 }
 
@@ -165,7 +164,17 @@ export const usePortalTeleport = () => {
       }
 
       if (activePortal.redirect) {
-        window.location.href = engineState.publicPath.value + '/location/' + activePortal.location
+        // window.location.href = engineState.publicPath.value + '/location/' + activePortal.location
+        // if (activePortal.location === 'dancing') window.location.href = process.env.VITE_PORTAL_DANCING_LOCATION
+        // else window.location.href = process.env.VITE_PORTAL_FOOTBALL_LOCATION
+        if (activePortal.location === 'dancing')
+          window.location.href = `${process.env.VITE_PORTAL_DANCING_LOCATION}?code=${localStorage.getItem(
+            'userCode'
+          )}&&username=${localStorage.getItem('username')}&&avatarname=${localStorage.getItem('avatarname')}`
+        else if (activePortal.location === 'football')
+          window.location.href = `${process.env.VITE_PORTAL_FOOTBALL_LOCATION}?code=${localStorage.getItem(
+            'userCode'
+          )}&&username=${localStorage.getItem('username')}&&avatarname=${localStorage.getItem('avatarname')}`
         return
       }
 

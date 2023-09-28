@@ -32,6 +32,7 @@ import FacebookStrategy from './strategies/facebook'
 import GithubStrategy from './strategies/github'
 import GoogleStrategy from './strategies/google'
 import { MyJwtStrategy } from './strategies/jwt'
+import KeycloakStrategy from './strategies/keycloak'
 import LinkedInStrategy from './strategies/linkedin'
 import TwitterStrategy from './strategies/twitter'
 
@@ -50,6 +51,7 @@ export default (app: Application): void => {
   authentication.register('github', new GithubStrategy(app) as any)
   authentication.register('linkedin', new LinkedInStrategy(app) as any)
   authentication.register('twitter', new TwitterStrategy(app) as any)
+  authentication.register('keycloak', new KeycloakStrategy(app) as any)
 
   app.use('authentication', authentication)
 

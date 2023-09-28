@@ -1,0 +1,32 @@
+// Coin message view to be changed
+.coinMessage {
+  font-size: 120px;
+  background-color: rgb(32 28 78 / 86.7%);
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: 600;
+  border: 10px solid white;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 60px;
+  box-shadow: #fff2 0 0 30px;
+  width: 1000px;
+  display: inline-block;
+  text-align: center;
+}
+
+// Coin button view to be changed
+.coinButton {
+  font-size: 20px;
+  background-color: rgb(38 82 51 / 86.7%);
+  color: white;
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  border: 10px solid white;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 60px;
+  box-shadow: #fff2 0 0 30px;
+  width: 100px;
+  text-align: center;
+}

@@ -75,6 +75,9 @@ const AvatarMenu = () => {
   }
 
   const handleConfirmAvatar = () => {
+    const name: any = selectedAvatar.name
+    localStorage.setItem('selectavatar', name)
+    localStorage.setItem('ComfirmSelected', 'true')
     if (selectedAvatarId && selectedAvatar && userAvatarId !== selectedAvatarId) {
       setAvatar(selectedAvatarId)
       PopupMenuServices.showPopupMenu()
@@ -128,7 +131,7 @@ const AvatarMenu = () => {
           </Button>
         </Box>
       }
-      title={t('user:avatar.titleSelectAvatar')}
+      // title={t('user:avatar.titleSelectAvatar')}
       onBack={() => PopupMenuServices.showPopupMenu(UserMenus.Profile)}
       onClose={() => PopupMenuServices.showPopupMenu()}
     >
@@ -139,12 +142,12 @@ const AvatarMenu = () => {
           </Grid>
 
           <Grid item md={6} sx={{ width: '100%' }}>
-            <InputText
+            {/* <InputText
               placeholder={t('user:avatar.searchAvatar')}
               value={localSearchString}
               sx={{ mt: 1 }}
               onChange={(e) => handleSearch(e.target.value)}
-            />
+            /> */}
 
             <IconButton
               icon={<Icon type="KeyboardArrowUp" />}
@@ -181,7 +184,7 @@ const AvatarMenu = () => {
                 onClick={handleNextAvatars}
               />
             </Box>
-            <Button
+            {/* <Button
               fullWidth
               startIcon={<Icon type="PersonAdd" />}
               title={t('user:avatar.createAvatar')}
@@ -190,7 +193,7 @@ const AvatarMenu = () => {
               onClick={() => PopupMenuServices.showPopupMenu(UserMenus.AvatarModify)}
             >
               {t('user:avatar.createAvatar')}
-            </Button>
+            </Button> */}
           </Grid>
         </Grid>
       </Box>

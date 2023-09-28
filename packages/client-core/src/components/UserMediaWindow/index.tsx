@@ -26,7 +26,7 @@ Ethereal Engine. All Rights Reserved.
 import classNames from 'classnames'
 import hark from 'hark'
 import { t } from 'i18next'
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 import { LocationState } from '@etherealengine/client-core/src/social/services/LocationService'
 import {
@@ -59,13 +59,22 @@ import { MediaStreamState } from '../../transports/MediaStreams'
 import { PeerMediaChannelState, PeerMediaStreamInterface } from '../../transports/PeerMediaChannelState'
 import { ConsumerExtension, SocketWebRTCClientNetwork } from '../../transports/SocketWebRTCClientFunctions'
 import { useUserAvatarThumbnail } from '../../user/functions/useUserAvatarThumbnail'
-import { AvatarState } from '../../user/services/AvatarService'
+import { AvatarService } from '../../user/services/AvatarService'
 import Draggable from './Draggable'
 import styles from './index.module.scss'
 
 interface Props {
   peerID: PeerID
   type: 'screen' | 'cam'
+}
+
+export const isJsonString = (str) => {
+  try {
+    JSON.parse(str)
+  } catch (e) {
+    return false
+  }
+  return true
 }
 
 export const useUserMediaWindowHook = ({ peerID, type }: Props) => {
@@ -499,7 +508,7 @@ export const UserMediaWindow = ({ peerID, type }: Props): JSX.Element => {
         </div>
         <span key={peerID + '-' + type + '-audio-container'} id={peerID + '-' + type + '-audio-container'} />
         <div className={styles['user-controls']}>
-          <div className={styles['username']}>{username}</div>
+          <div className={styles['username']}>{isJsonString(username) ? JSON.parse(username).name : username}</div>
           <div className={styles['controls']}>
             <div className={styles['mute-controls']}>
               {videoStream && !videoProducerPaused ? (

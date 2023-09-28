@@ -25,10 +25,13 @@ Ethereal Engine. All Rights Reserved.
 
 import { Engine } from '../../ecs/classes/Engine'
 import { defineSystem } from '../../ecs/functions/SystemFunctions'
-import { applyAutopilotInput } from '../functions/moveAvatar'
+import { applyAutopilotInput, walkToPoint } from '../functions/moveAvatar'
 
 const execute = () => {
   applyAutopilotInput(Engine.instance.localClientEntity)
+  if (localStorage.getItem('walkToShrineGate') == 'True' && localStorage.getItem('shrine') == 'True') {
+    walkToPoint(Engine.instance.localClientEntity)
+  }
 }
 
 export const AvatarAutopilotSystem = defineSystem({

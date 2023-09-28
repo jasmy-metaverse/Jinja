@@ -33,6 +33,7 @@ import { WebcamInputSystem } from '../media/webcam/WebcamInput'
 import { ClientNetworkingSystem } from '../networking/ClientNetworkingSystem'
 import { AvatarUISystem } from '../systems/AvatarUISystem'
 import { LoadingUISystem } from '../systems/LoadingUISystem'
+import { MessageUISystem } from '../systems/MessageUISystem'
 import { WarningUISystem } from '../systems/WarningUISystem'
 import { WidgetUISystem } from '../systems/WidgetUISystem'
 import { FilteredUsersSystem } from '../transports/FilteredUsersSystem'
@@ -42,7 +43,7 @@ export const useDefaultLocationSystems = (online: boolean) => {
   useEffect(() => {
     startSystems([WebcamInputSystem], { with: InputSystemGroup })
 
-    startSystems([LoadingUISystem, AvatarUISystem, WidgetUISystem], { before: TransformSystem })
+    startSystems([LoadingUISystem, AvatarUISystem, WidgetUISystem, MessageUISystem], { before: TransformSystem })
 
     const postPresentationSystems = [UserUISystem, FilteredUsersSystem, WarningUISystem]
 

@@ -152,6 +152,12 @@ export class IdentityProvider<T = IdentityProviderInterface> extends Service<T> 
         break
       case 'auth0':
         break
+      case 'keycloak':
+        identityProvider = {
+          token: token,
+          type
+        }
+        break
     }
 
     // if userId is not defined, then generate userId
@@ -212,6 +218,11 @@ export class IdentityProvider<T = IdentityProviderInterface> extends Service<T> 
       }
     }
 
+    // When logout from all OAuth services, only visiable male or female
+    const without = avatars.data.filter(
+      (item) => item.name !== '' && item.name !== '' && item.name !== ''
+    )
+
     let result
     try {
       result = await super.create(
@@ -222,7 +233,6 @@ export class IdentityProvider<T = IdentityProviderInterface> extends Service<T> 
             id: userId,
             isGuest,
             inviteCode: type === 'guest' ? null : code,
-            avatarId: avatars.data[random(avatars.data.length - 1)].id
           }
         },
         params
